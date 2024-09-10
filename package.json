@@ -1,0 +1,16 @@
+{
+  "name": "ta-buku-induk",
+  "version": "1.0.0",
+  "description": "Tugas akhir membuat Buku Induk yang dikerjakan oleh siswa-siswi Kelas 12 RPL 1",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^32.0.2",
+    "electron-builder": "^25.0.5"
+  }
+}
