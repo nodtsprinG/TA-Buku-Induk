@@ -1,8 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import { FaChevronDown } from "react-icons/fa";
+import { LiaAngleDownSolid } from "react-icons/lia";
 import React, { useState } from 'react'
 const LoginBox = () => {
     const navigate = useNavigate()
+    
     const [selectedValue, setSelectedValue] = useState('Angkatan')
     const [isOpen, setIsOpen] = useState(false)
 
@@ -21,16 +22,16 @@ const LoginBox = () => {
                 <div className="relative w-[476px] h-[70px] mb-6 border border-gray-300 rounded-[10px] font-PTSans">
                     <input type="password" placeholder="Password" className="w-full h-full rounded-[10px] placeholder-black py-4 px-6" id="input" />
                 </div>
-                <div className="relative w-[476px] h-[70px] mb-6 border border-gray-300 rounded-[10px] font-PTSans flex items-center py-4 px-6 cursor-not-allowed">
+                <div className="relative w-[476px] h-[70px] mb-6 border border-gray-300 rounded-[10px] font-PTSans flex items-center py-4 px-6">
                     <div
                         className="flex items-center cursor-pointer"
                         onClick={() => setIsOpen(!isOpen)}
                     >
-                        <FaChevronDown />
+                        <LiaAngleDownSolid />
                         <label className="font-PTSans ml-6">{selectedValue}</label>
                     </div>
                     {isOpen && (
-                        <ul className="absolute top-full mt-2 left-0 w-full bg-white border border-gray-300 rounded-[10px] px-4 py-4">
+                        <ul className="absolute top-full mt-2 left-0 w-full h-auto bg-white border border-gray-300 rounded-[10px] px-4 py-4">
                             <li>
                                 <input
                                     type="checkbox"
