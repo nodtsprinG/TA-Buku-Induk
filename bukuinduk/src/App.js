@@ -1,6 +1,6 @@
 import { HashRouter as Router, Routes, Route} from 'react-router-dom'
 import LoginAdmin from './Pages/LoginAdmin'
-import DashboardAdmin from './Pages/HalamanDepan/DashboardAdmin'
+import DashboardAdmin from './Pages/DashboardAdmin'
 import SemuaSiswa from './Pages/SemuaSiswa'
 import KesehatanAdmin from './Pages/HalamanDepan/KesehatanAdmin'
 import KetAyah from './Pages/HalamanDepan/KetAyah'
