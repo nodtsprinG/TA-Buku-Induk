@@ -7,7 +7,7 @@ const LoginAdmin = () => {
         <div className="w-full h-screen flex">
             <div className="w-full h-full flex">
                 <div
-                    className="w-[650px] h-full flex justify-center items-center rounded-[0_30px_30px_0]"
+                    className="w-[700px] h-full flex justify-center items-center rounded-[0_30px_30px_0]"
                     style={{
                         background: 'radial-gradient(171.87% 171.87% at 31.64% 55.75%, rgba(0, 70, 251, 0.8) 0%, rgba(0, 71, 255, 0) 100%)',
                     }}

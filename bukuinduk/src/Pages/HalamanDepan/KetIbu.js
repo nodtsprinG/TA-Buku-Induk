@@ -1,7 +1,6 @@
-import Dashboard from '../Components/Dashboard'
-import Header from '../Components/Header'
-const SemuaSiswa = () => {
-    const textHeader = "Data Siswa ADMIN";
+import Dashboard from '../../Components/Dashboard'
+import Header from '../../Components/Header'
+const KetIbu = () => {
     return (
         <div className='w-full h-full flex'>
             <div className='w-[284px] h-full'>
@@ -9,10 +8,10 @@ const SemuaSiswa = () => {
             </div>
             <div className='flex-1'>
                 <div>
-                    <Header textHeader={textHeader} />
+                    <Header />
                 </div>
             </div>
         </div>
     )
 }
-export default SemuaSiswa;
+export default KetIbu;
