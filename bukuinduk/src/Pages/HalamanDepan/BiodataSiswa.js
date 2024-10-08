@@ -1,5 +1,6 @@
 import Dashboard from '../../Components/Dashboard'
 import Header from '../../Components/Header'
+import NavButtons from '../../Components/RoundedButton'
 const BiodataSiswa = () => {
     const textHeader = "Halaman Depan ADMIN"
     return (
@@ -11,7 +12,10 @@ const BiodataSiswa = () => {
                 <div>
                     <Header textHeader={textHeader} />
                 </div>
+                <div>
+                <NavButtons />
             </div>
+            </div>        
         </div>
     )
 }
