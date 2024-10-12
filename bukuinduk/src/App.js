@@ -2,6 +2,7 @@ import { HashRouter as Router, Routes, Route} from 'react-router-dom'
 import LoginAdmin from './Pages/LoginAdmin'
 import DashboardAdmin from './Pages/DashboardAdmin'
 import SemuaSiswa from './Pages/SemuaSiswa'
+import AlamatAdmin from './Pages/HalamanDepan/AlamatAdmin'
 import KesehatanAdmin from './Pages/HalamanDepan/KesehatanAdmin'
 import KetAyah from './Pages/HalamanDepan/KetAyah'
 import KetIbu from './Pages/HalamanDepan/KetIbu'
@@ -20,6 +21,7 @@ function App() {
         <Route path='/halamandepan' element={<HalamanDepan />} />
         <Route path='/halamanbelakang' element={<HalamanBelakang />} />
         <Route path='/semuasiswa' element={<SemuaSiswa />} />
+        <Route path='/alamat' element={<AlamatAdmin />} />
         <Route path='/kesehatanadmin' element={<KesehatanAdmin />} />
         <Route path='/ketAyah' element={<KetAyah />} />
         <Route path='/ketIbu' element={<KetIbu />} />
