@@ -11,6 +11,7 @@ import PendidikanAdmin from './Pages/HalamanDepan/PendidikanAdmin'
 import PerkembanganAdmin from './Pages/HalamanDepan/PerkembanganAdmin'
 import HalamanDepan from './Pages/HalamanDepan/BiodataSiswa'
 import HalamanBelakang from './Pages/HalamanBelakang/HalamanBelakang'
+import Selesai from './Pages/HalamanDepan/Selesai'
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
       <Routes>
         <Route path='/' element={<LoginAdmin />} />
         <Route path='/admindashboard' element={<DashboardAdmin />} />
-        <Route path='/halamandepan' element={<HalamanDepan />} />
+        <Route path='/halamandepan/*' element={<HalamanDepan />} />
         <Route path='/halamanbelakang' element={<HalamanBelakang />} />
         <Route path='/semuasiswa' element={<SemuaSiswa />} />
         <Route path='/alamat' element={<AlamatAdmin />} />
@@ -28,6 +29,7 @@ function App() {
         <Route path='/ketWali' element={<KetWali />} />
         <Route path='/pendidikan' element={<PendidikanAdmin />} />
         <Route path='/perkembangan' element={<PerkembanganAdmin />} />
+        <Route path='/selesai' element={<Selesai />} />
       </Routes>
     </Router>
   );

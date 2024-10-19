@@ -61,7 +61,7 @@ const RoundedButton = () => {
             </div>
 
             <div class="flex flex-col items-center">
-                <button className='w-[80px] h-[80px] flex items-center justify-center bg-slate-100 text-black hover:bg-blue-500 hover:text-white rounded-full text-xl'>
+                <button onClick={() => navigate('/selesai')} className='w-[80px] h-[80px] flex items-center justify-center bg-slate-100 text-black hover:bg-blue-500 hover:text-white rounded-full text-xl'>
                     9
                 </button>
                 <span class="text-lg mt-1">Selesai</span>

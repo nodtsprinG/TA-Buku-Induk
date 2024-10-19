@@ -1,9 +1,10 @@
 import Dashboard from '../../Components/PagesComponent/Dashboard'
 import Header from '../../Components/PagesComponent/Header'
 import NavButtons from '../../Components/Buttons/RoundedButton'
-const KesehatanAdmin = () => {
+
+const Selesai = () => {
     const textHeader = "Halaman Depan ADMIN"
-    const textSubHeader = "Kesehatan Siswa"
+    const textSubHeader = "Selesai Pendidikan"
     return (
         <div className='w-full h-full flex'>
             <div className='w-[284px] h-full'>
@@ -23,4 +24,4 @@ const KesehatanAdmin = () => {
         </div>
     )
 }
-export default KesehatanAdmin;
+export default Selesai

@@ -1,6 +1,6 @@
-import Dashboard from '../../Components/Dashboard'
-import Header from '../../Components/Header'
-import Tabel from '../../Components/TabelBel'
+import Dashboard from '../../Components/PagesComponent/Dashboard'
+import Header from '../../Components/PagesComponent/Header'
+import Tabel from '../../Components/Tables/TabelBel'
 const HalamanBelakang = () => {
     const textHeader = "Halaman Belakang ADMIN"
     return (

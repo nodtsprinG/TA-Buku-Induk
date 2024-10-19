@@ -28,7 +28,7 @@ const Dashboard = () => {
                     </header>
                     <nav className='w-fill h-[451px] p-[24px_24px_0_24px] gap-[10px]'>
                         <div className='w-fill h-[20px] p-[0_12px_0_12px] gap-[10px]'>
-                            <h4 className='font-PTSans text-[10px] font-normal leading-[12px] tracking-[4px] text-left'>Menu Utama</h4>
+                            <h4 className='font-PTSans text-[10px] font-normal leading-[12px] tracking-[4px] text-left text-[#5C5E64]'>Menu Utama</h4>
                         </div>
 
                         <div className='w-[236px] h-[40px] rounded-[8px] p-[10px_12px_10px_12px] gap-[10px] flex items-center hover:bg-gray-100'>

@@ -1,8 +1,9 @@
-import Dashboard from '../../Components/Dashboard'
-import Header from '../../Components/Header'
-import NavButtons from '../../Components/RoundedButton'
+import Dashboard from '../../Components/PagesComponent/Dashboard'
+import Header from '../../Components/PagesComponent/Header'
+import NavButtons from '../../Components/Buttons/RoundedButton'
 const BiodataSiswa = () => {
     const textHeader = "Halaman Depan ADMIN"
+    const textSubHeader = "Biodata"
     return (
         <div className='w-full h-full flex'>
             <div className='w-[284px] h-full'>
@@ -10,12 +11,15 @@ const BiodataSiswa = () => {
             </div>
             <div className='flex-1'>
                 <div>
-                    <Header textHeader={textHeader} />
+                    <Header textHeader={textHeader} textSubHeader={textSubHeader} />
+                </div>
+                <div className='w-full'>
+                    <NavButtons />
                 </div>
                 <div>
-                <NavButtons />
+                    {/*Disini Tempat Buat Formnya, Hapus kalo mau nulis kodenya*/}
+                </div>
             </div>
-            </div>        
         </div>
     )
 }

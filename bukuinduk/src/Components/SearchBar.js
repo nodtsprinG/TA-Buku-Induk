@@ -1,7 +1,7 @@
 import { CiSearch } from "react-icons/ci";
 const SearchBar = () => {
     return (
-        <div className="relative w-[608px] h-[63px] gap-[15px]">
+        <div className="relative w-full h-full">
             <CiSearch className="absolute top-1/2 left-4 transform -translate-y-1/2 text-gray-400 w-[30px] h-[30px]" />
             <input
                 placeholder="Cari"

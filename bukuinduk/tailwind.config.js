@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        PTSans: ['PTSans','sans-serif']
+        PTSans: ['PTSans','sans-serif'],
+        Inter: ['Inter', 'sans-serif']
       },
       colors: {
         'button': '#4682B4'

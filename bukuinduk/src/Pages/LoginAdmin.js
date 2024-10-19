@@ -1,5 +1,5 @@
-import LoginBox from '../Components/LoginBox';
-import Homepage from '../Components/Homepage';
+import LoginBox from '../Components/PagesComponent/LoginBox';
+import Homepage from '../Components/PagesComponent/Homepage';
 import Leftbg from '../Assets/leftbg.jpg';
 
 const LoginAdmin = () => {
