@@ -38,15 +38,16 @@ const DashboardAdmin = () => {
                     <Header textHeader={textHeader} textSubHeader={textSubHeader} />
                 </div>
 
-                {/* Search Bar */}
+                {/* Boxes */}
+                <div className='w-full lg:w-[1112px] h-[108px] ml-10 mt-10'>
+                    <Boxes />
+                </div>
+
+                {/* Search Bar 
                 <div className='w-full lg:w-[608px] h-[63px] gap-[15px] mt-[40px] lg:mt-[70px] ml-5'>
                     <SearchBar />
                 </div>
-
-                {/* Boxes */}
-                <div className='w-full lg:w-[1112px] h-[108px] ml-5 mt-5'>
-                    <Boxes />
-                </div>
+                */}
             </div>
         </div>
     );

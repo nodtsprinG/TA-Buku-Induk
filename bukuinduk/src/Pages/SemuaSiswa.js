@@ -21,7 +21,7 @@ const SemuaSiswa = () => {
                     <Header textHeader={textHeader} textSubHeader={textSubHeader} />
                 </div>
                 <div className="flex w-[1132px] h-[772px] mt-4 ml-4 p-[10px] gap-[10px]">
-                    <div className="w-[1112px] h-[772px] p-4 rounded-[10px] bg-[#5775BA40]">
+                    <div className="w-[1112px] h-[772px] p-4 rounded-[10px] bg-subcontent">
                         {/* Wrapper untuk ikon filter dan search bar */}
                         <div className="flex items-center gap-4">
                             {/* Ikon Filter */}
@@ -32,7 +32,7 @@ const SemuaSiswa = () => {
                                 <CiSearch className="absolute top-1/2 left-4 transform -translate-y-1/2 text-gray-400 w-[20px] h-[30px]" />
                                 <input
                                     placeholder="Cari"
-                                    className="w-full h-full pl-[48px] pr-[20px] rounded-[6px] p-[10px] border outline-none border-[#939393] placeholder:font-PTSans font-bold size-4 leading-[20.7px]"
+                                    className="w-full h-full pl-[48px] pr-[20px] rounded-[6px] p-[10px] border outline-none border-[#939393] placeholder:font-Quicksand font-bold size-4 leading-[20.7px]"
                                     type="search"
                                 />
                             </div>

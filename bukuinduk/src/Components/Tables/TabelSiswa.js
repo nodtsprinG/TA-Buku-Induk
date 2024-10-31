@@ -3,7 +3,7 @@ import { MdPictureAsPdf } from "react-icons/md";
 const TabelSiswa = () => {
     return (
         <div>
-            <table className='w-[1074px] h-[55px] mt-4'>
+            <table className='w-[1074px] h-[55px] mt-4 font-Quicksand'>
                 <thead className='w-full border border-black bg-transparent'>
                     <th className='w-[36px] h-[53px] p-[10px] gap-[10px]'><button type='checkbox'>d</button></th>
                     <th className='w-[65px] h-[53px]'>Nomor</th>
@@ -14,7 +14,7 @@ const TabelSiswa = () => {
                     <th className='w-[291px] h-[53px] text-center'>Aksi</th>
                 </thead>
             </table>
-            <table className='w-[1074px] mt-1'>
+            <table className='w-[1074px] mt-1 font-Quicksand'>
                 <tbody className='w-full border border-black bg-transparent mt-2'>
                     <tr>
                         <td className='w-[36px] h-[53px] border border-black'><button type='checkbox'></button></td>

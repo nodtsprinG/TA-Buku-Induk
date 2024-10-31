@@ -15,27 +15,27 @@ const LoginBox = () => {
   return (
     <div className="w-full h-full flex justify-center items-center">
       <div className="border border-slate-300 rounded-[10px] px-6 py-10 flex flex-col justify-center items-center shadow-custom">
-        <h1 className="text-2xl font-PTSans font-bold mb-4">SELAMAT DATANG</h1>
-        <div className="relative w-[476px] h-[70px] mb-6 border border-gray-300 rounded-[10px] font-PTSans">
+        <h1 className="text-2xl font-Quicksand font-bold mb-4">SELAMAT DATANG</h1>
+        <div className="relative w-[476px] h-[70px] mb-6 border border-gray-300 rounded-[10px] font-Quicksand">
           <input type="email" placeholder="Email" className="w-full h-full rounded-[10px] placeholder-black py-4 px-6" id="input" />
         </div>
-        <div className="relative w-[476px] h-[70px] mb-6 border border-gray-300 rounded-[10px] font-PTSans">
+        <div className="relative w-[476px] h-[70px] mb-6 border border-gray-300 rounded-[10px] font-Quicksand">
           <input type="password" placeholder="Password" className="w-full h-full rounded-[10px] placeholder-black py-4 px-6" id="input" />
         </div>
-        <div className="relative w-[476px] h-[70px] mb-6 border border-gray-300 rounded-[10px] font-PTSans flex items-center py-4 px-6">
+        <div className="relative w-[476px] h-[70px] mb-6 border border-gray-300 rounded-[10px] font-Quicksand flex items-center py-4 px-6">
           <div
             className="flex items-center cursor-pointer"
             onClick={() => setIsOpen(!isOpen)}
           >
             <LiaAngleDownSolid />
-            <label className="font-PTSans ml-6">{selectedValue}</label>
+            <label className="font-Quicksand ml-6">{selectedValue}</label>
           </div>
           {isOpen && (
             <ul className="absolute top-full mt-2 left-0 w-full h-auto bg-white border border-gray-300 rounded-[10px] px-4 py-4">
               <li>
-                <label className="flex items-center cursor-pointer">
+                <label className="flex items-center cursor-pointer font-Quicksand">
                   <span
-                    className={`inline-block w-4 h-4 rounded-full mr-2 ${
+                    className={`inline-block w-4 h-4 rounded-full mr-2 font-Quicksand ${
                       selectedValue === '2020' ? 'bg-blue-500' : 'bg-gray-300'
                     }`}
                   ></span>
@@ -86,7 +86,7 @@ const LoginBox = () => {
         <button
           onClick={() => navigate('/admindashboard')}
           type="button"
-          className="w-[476px] h-[70px] bg-button text-2xl text-white font-PTSans rounded-[10px] p-[10px]"
+          className="w-[476px] h-[70px] bg-next text-2xl text-white font-Quicksand font-bold rounded-[10px] p-[10px]"
         >
           MASUK
         </button>

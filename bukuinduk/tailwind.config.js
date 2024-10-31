@@ -6,11 +6,16 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        PTSans: ['PTSans','sans-serif'],
-        Inter: ['Inter', 'sans-serif']
+        Inter: ['Inter', 'sans-serif'],
+        Quicksand: ['Quicksand']
       },
       colors: {
-        'button': '#4682B4'
+        'background-frame': 'rgba(245, 245, 245, 1);',
+        'background-header': 'rgba(140, 209, 250, 0.75);',
+        'next': 'rgba(34, 100, 229, 1);',
+        'back': 'rgba(132, 155, 176, 1);',
+        'delete': 'rgba(255, 13, 13, 1);',
+        'subcontent': 'rgba(140, 209, 250, 0.35);'
       },
       boxShadow: {
         'custom': '5px 8px 8px 4px rgba(0, 0, 0, 0.3)',

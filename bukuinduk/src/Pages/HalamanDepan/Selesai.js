@@ -1,7 +1,7 @@
 import Dashboard from '../../Components/PagesComponent/Dashboard'
 import Header from '../../Components/PagesComponent/Header'
 import NavButtons from '../../Components/Buttons/RoundedButton'
-
+import Form from '../../Components/Form/Selesai'
 const Selesai = () => {
     const textHeader = "Halaman Depan ADMIN"
     const textSubHeader = "Selesai Pendidikan"
@@ -17,8 +17,8 @@ const Selesai = () => {
                 <div className='w-full'>
                     <NavButtons />
                 </div>
-                <div>
-                    {/*Disini Tempat Buat Formnya, Hapus kalo mau nulis kodenya*/}
+                <div className='mt-10'>
+                    <Form />
                 </div>
             </div>
         </div>
