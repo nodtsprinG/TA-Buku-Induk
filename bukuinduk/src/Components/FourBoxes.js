@@ -1,7 +1,8 @@
-import Totals from '../Assets/all.png';
-import Active from '../Assets/activee.png';
-import Boys from '../Assets/boys.png';
-import Girls from '../Assets/girls.png';
+import Totals from '../Assets/all.svg';
+import Active from '../Assets/activeee.svg';
+import Boys from '../Assets/boys.svg';
+import Girls from '../Assets/girls.svg';
+import { Link } from 'react-router-dom';
 
 const FourBoxes = () => {
     return (

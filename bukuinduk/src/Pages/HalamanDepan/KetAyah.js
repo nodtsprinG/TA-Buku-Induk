@@ -1,6 +1,7 @@
 import Dashboard from '../../Components/PagesComponent/Dashboard'
 import Header from '../../Components/PagesComponent/Header'
 import NavButtons from '../../Components/Buttons/RoundedButton'
+import Form from '../../Components/Form/KeteranganAyah'
 const KetAyah = () => {
     const textHeader = "Halaman Depan ADMIN"
     const textSubHeader = "Keterangan Ayah Siswa"
@@ -17,7 +18,7 @@ const KetAyah = () => {
                     <NavButtons />
                 </div>
                 <div>
-                    {/*Disini Tempat Buat Formnya, Hapus kalo mau nulis kodenya*/}
+                    <Form />
                 </div>
             </div>
         </div>

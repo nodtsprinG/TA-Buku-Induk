@@ -1,6 +1,6 @@
 import LoginBox from '../Components/PagesComponent/LoginBox';
 import Homepage from '../Components/PagesComponent/Homepage';
-import Leftbg from '../Assets/leftbg.jpg';
+
 
 const LoginAdmin = () => {
     return (
@@ -16,8 +16,7 @@ const LoginAdmin = () => {
                 </div>
 
                 <div
-                    className="w-[790px] h-full mx-auto flex justify-center items-center bg-cover"
-                    style={{ backgroundImage: `url(${Leftbg})` }}>
+                    className="w-[790px] h-full mx-auto flex justify-center items-center bg-cover">
                     <div className='w-[642px] h-[706px] '>
                         <LoginBox />
                     </div>

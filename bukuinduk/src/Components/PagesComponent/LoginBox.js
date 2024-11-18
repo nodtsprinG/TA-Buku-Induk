@@ -1,16 +1,13 @@
 import { useNavigate } from "react-router-dom";
-import { LiaAngleDownSolid } from "react-icons/lia";
 import React, { useState } from 'react';
 
 const LoginBox = () => {
   const navigate = useNavigate();
   const [selectedValue, setSelectedValue] = useState('Angkatan');
-  const [isOpen, setIsOpen] = useState(false);
 
-  const handleCheckboxChange = (value) => {
-    setSelectedValue(value);
-    setIsOpen(false);
-  };
+  const handleChange = (e) => {
+      setSelectedValue(e.target.value);
+  }
 
   return (
     <div className="w-full h-full flex justify-center items-center">
@@ -23,65 +20,17 @@ const LoginBox = () => {
           <input type="password" placeholder="Password" className="w-full h-full rounded-[10px] placeholder-black py-4 px-6" id="input" />
         </div>
         <div className="relative w-[476px] h-[70px] mb-6 border border-gray-300 rounded-[10px] font-Quicksand flex items-center py-4 px-6">
-          <div
-            className="flex items-center cursor-pointer"
-            onClick={() => setIsOpen(!isOpen)}
+          <select
+          value={selectedValue}
+          onChange={handleChange}
+          className="w-full h-full border-collapse outline-none"
           >
-            <LiaAngleDownSolid />
-            <label className="font-Quicksand ml-6">{selectedValue}</label>
-          </div>
-          {isOpen && (
-            <ul className="absolute top-full mt-2 left-0 w-full h-auto bg-white border border-gray-300 rounded-[10px] px-4 py-4">
-              <li>
-                <label className="flex items-center cursor-pointer font-Quicksand">
-                  <span
-                    className={`inline-block w-4 h-4 rounded-full mr-2 font-Quicksand ${
-                      selectedValue === '2020' ? 'bg-blue-500' : 'bg-gray-300'
-                    }`}
-                  ></span>
-                  2020
-                  <input
-                    type="checkbox"
-                    className="hidden"
-                    onChange={() => handleCheckboxChange('2020')}
-                    checked={selectedValue === '2020'}
-                  />
-                </label>
-              </li>
-              <li>
-                <label className="flex items-center cursor-pointer">
-                  <span
-                    className={`inline-block w-4 h-4 rounded-full mr-2 ${
-                      selectedValue === '2021' ? 'bg-blue-500' : 'bg-gray-300'
-                    }`}
-                  ></span>
-                  2021
-                  <input
-                    type="checkbox"
-                    className="hidden"
-                    onChange={() => handleCheckboxChange('2021')}
-                    checked={selectedValue === '2021'}
-                  />
-                </label>
-              </li>
-              <li>
-                <label className="flex items-center cursor-pointer">
-                  <span
-                    className={`inline-block w-4 h-4 rounded-full mr-2 ${
-                      selectedValue === '2022' ? 'bg-blue-500' : 'bg-gray-300'
-                    }`}
-                  ></span>
-                  2022
-                  <input
-                    type="checkbox"
-                    className="hidden"
-                    onChange={() => handleCheckboxChange('2022')}
-                    checked={selectedValue === '2022'}
-                  />
-                </label>
-              </li>
-            </ul>
-          )}
+            <option value="" className="w-full">Angkatan</option>
+            <option value="2023">2023-2024</option>
+            <option value="2022">2022-2023</option>
+            <option value="2021">2021-2022</option>
+            <option value="2020">2020-2021</option>
+          </select>
         </div>
         <button
           onClick={() => navigate('/admindashboard')}

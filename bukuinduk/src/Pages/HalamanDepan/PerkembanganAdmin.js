@@ -1,6 +1,7 @@
 import Dashboard from '../../Components/PagesComponent/Dashboard'
 import Header from '../../Components/PagesComponent/Header'
 import NavButtons from '../../Components/Buttons/RoundedButton'
+import Perkembangan from '../../Components/Form/Perkembangan'
 const PerkembanganAdmin = () => {
     const textHeader = "Halaman Depan ADMIN"
     const textSubHeader = "Perkembangan Siswa"
@@ -18,7 +19,7 @@ const PerkembanganAdmin = () => {
                 </div>
                 
                 <div>
-                    {/*Disini Tempat Buat Formnya, Hapus kalo mau nulis kodenya*/}
+                    <Perkembangan />
                 </div>
                 
             </div>

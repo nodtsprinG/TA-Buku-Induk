@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Dashboard from '../Components/PagesComponent/Dashboard';
 import Header from '../Components/PagesComponent/Header';
-import SearchBar from '../Components/SearchBar';
 import Boxes from '../Components/FourBoxes';
 
 const DashboardAdmin = () => {
@@ -28,7 +27,7 @@ const DashboardAdmin = () => {
             </button>
 
             {/* Sidebar */}
-            <div className={`lg:w-[284px] h-auto lg:h-full fixed lg:static top-0 left-0 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out lg:translate-x-0 bg-white shadow-lg z-50`}>
+            <div className={`lg:w-[284px] h-screen lg:h-full fixed lg:static top-0 left-0 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out lg:translate-x-0 bg-white shadow-lg z-50`}>
                 <Dashboard />
             </div>
 
@@ -42,12 +41,6 @@ const DashboardAdmin = () => {
                 <div className='w-full lg:w-[1112px] h-[108px] ml-10 mt-10'>
                     <Boxes />
                 </div>
-
-                {/* Search Bar 
-                <div className='w-full lg:w-[608px] h-[63px] gap-[15px] mt-[40px] lg:mt-[70px] ml-5'>
-                    <SearchBar />
-                </div>
-                */}
             </div>
         </div>
     );

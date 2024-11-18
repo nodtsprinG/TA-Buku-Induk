@@ -1,6 +1,7 @@
 import Dashboard from '../../Components/PagesComponent/Dashboard'
 import Header from '../../Components/PagesComponent/Header'
 import NavButtons from '../../Components/Buttons/RoundedButton'
+import Alamat from '../../Components/Form/Alamat'
 const AlamatAdmin = () => {
     const textHeader = "Halaman Depan ADMIN"
     const textSubHeader = "Alamat Siswa"
@@ -17,7 +18,7 @@ const AlamatAdmin = () => {
                     <NavButtons />
                 </div>
                 <div>
-                    {/*Disini Tempat Buat Formnya, Hapus kalo mau nulis kodenya*/}
+                    <Alamat />
                 </div>
             </div>
         </div>

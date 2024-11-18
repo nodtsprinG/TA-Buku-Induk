@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import Dashboard from '../Components/PagesComponent/Dashboard'
 import Header from '../Components/PagesComponent/Header'
 import TabelSemua from '../Components/Tables/TabelSiswa'
@@ -6,11 +7,17 @@ import DeleteButton from '../Components/Buttons/ButtonDelete'
 import Filter from '../Components/Buttons/Filter'
 import { CiSearch } from "react-icons/ci";
 import NextButton from '../Components/Buttons/ButtonNext'
-import PageNum from '../Components/Buttons/PageNumber'
+import Pagination from '../Components/Buttons/Pagination'
 
 const SemuaSiswa = () => {
     const textHeader = "Data Siswa ADMIN";
     const textSubHeader = "Data Semua Siswa"
+    const [currentPage, setCurrentPage] = useState(1)
+    const totalPages = 3
+
+    const handlePageChange = (page) => {
+        setCurrentPage(page)
+    }
     return (
         <div className='w-full h-full flex'>
             <div className='w-[284px] h-full'>
@@ -43,8 +50,12 @@ const SemuaSiswa = () => {
                             <TabelSemua />
                         </div>
                         <div className='flex-1 mt-[500px]'>
-                            <div className='ml-[450px] mt-10'>
-                                <PageNum />
+                            <div className='mx-auto'>
+                                <Pagination
+                                    totalPages={totalPages}
+                                    currentPage={currentPage}
+                                    onPageChange={handlePageChange}
+                                />
                             </div>
                             <div className='ml-[900px]'>
                                 <NextButton />

@@ -15,7 +15,7 @@ module.exports = {
         'next': 'rgba(34, 100, 229, 1);',
         'back': 'rgba(132, 155, 176, 1);',
         'delete': 'rgba(255, 13, 13, 1);',
-        'subcontent': 'rgba(140, 209, 250, 0.35);'
+        'subcontent': 'rgba(140, 209, 250, 0.35);',
       },
       boxShadow: {
         'custom': '5px 8px 8px 4px rgba(0, 0, 0, 0.3)',
