@@ -1,4 +1,4 @@
-import Lanjut from '../Buttons/ButtonNext'
+import Simpan from '../Buttons/SaveButton'
 import Kembali from '../Buttons/BackButton'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -23,7 +23,7 @@ const Selesai = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!formData.melanjutkan || !formData.perusahaan || !formData.tanggal || !formData.penghasilan) {
+        if (!formData.melanjutkan && !formData.perusahaan && !formData.tanggal && !formData.penghasilan) {
             setError("Semua field harus diisi.");
             return;
         }
@@ -94,7 +94,7 @@ const Selesai = () => {
                         <Kembali back="/halamandepan/perkembangan" />
                     </div>
                     <div className='mt-10 ml-10 float-end'>
-                        <Lanjut to="/halamandepan" />
+                        <Simpan />
                     </div>
                 </form>
             </div>

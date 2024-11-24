@@ -29,39 +29,39 @@ const Pendidikan = () => {
                 <table className="mt-10 font-Quicksand w-full">
                     <tbody>
                         <tr>
-                            <td className="w-[400px] font-bold text-[24px]">1. Keterangan Sebelumnya</td>
+                            <td className="w-[350px] font-bold text-[24px] text-left">1. Keterangan Sebelumnya</td>
                         </tr>
                         <tr>
-                            <td className="w-[400px] font-bold text-[24px]">a. Tamatan dari</td>
+                            <td className="w-[350px] font-bold text-[24px] text-left">a. Tamatan dari</td>
                             <td className="h-[85px]">
                                 <input
                                     type="text"
                                     name="tamatanDari"
-                                    className="w-full h-[60px] rounded-[10px] border p-[10px] outline-none"
+                                    className="w-[507px] h-[65px] rounded-[10px] border p-[10px] outline-none float-end"
                                     value={formData.tamatanDari}
                                     onChange={handleChange}
                                 />
                             </td>
                         </tr>
                         <tr>
-                            <td className="w-[400px] font-bold text-[24px]">b. Nomor Ijazah</td>
+                            <td className="w-[350px] font-bold text-[24px] text-left">b. Nomor Ijazah</td>
                             <td className="h-[85px]">
                                 <input
                                     type="text"
                                     name="nomorIjazah"
-                                    className="w-full h-[60px] rounded-[10px] border p-[10px] outline-none"
+                                    className="w-[507px] h-[65px] rounded-[10px] border p-[10px] outline-none float-end"
                                     value={formData.nomorIjazah}
                                     onChange={handleChange}
                                 />
                             </td>
                         </tr>
                         <tr>
-                            <td className="w-[400px] font-bold text-[24px]">c. Nomor SKHUN</td>
+                            <td className="w-[350px] font-bold text-[24px]">c. Nomor SKHUN</td>
                             <td className="h-[85px]">
                                 <input
                                     type="text"
                                     name="nomorSKHUN"
-                                    className="w-full h-[60px] rounded-[10px] border p-[10px] outline-none"
+                                    className="w-[507px] h-[65px] rounded-[10px] border p-[10px] outline-none float-end"
                                     value={formData.nomorSKHUN}
                                     onChange={handleChange}
                                 />
@@ -69,90 +69,90 @@ const Pendidikan = () => {
                         </tr>
 
                         <tr>
-                            <td className="w-[400px] font-bold text-[24px]">2. Pindahan</td>
+                            <td className="w-[350px] font-bold text-[24px]">2. Pindahan</td>
                         </tr>
                         <tr>
-                            <td className="w-[400px] font-bold text-[24px]">a. Dari Sekolah</td>
+                            <td className="w-[350px] font-bold text-[24px]">a. Dari Sekolah</td>
                             <td className="h-[85px]">
                                 <input
                                     type="text"
                                     name="dariSekolah"
-                                    className="w-full h-[60px] rounded-[10px] border p-[10px] outline-none"
+                                    className="w-[507px] h-[65px] rounded-[10px] border p-[10px] outline-none float-end"
                                     value={formData.dariSekolah}
                                     onChange={handleChange}
                                 />
                             </td>
                         </tr>
                         <tr>
-                            <td className="w-[400px] font-bold text-[24px]">b. Alasan</td>
+                            <td className="w-[350px] font-bold text-[24px]">b. Alasan</td>
                             <td className="h-[85px]">
                                 <input
                                     type="text"
                                     name="alasan"
-                                    className="w-full h-[60px] rounded-[10px] border p-[10px] outline-none"
+                                    className="w-[507px] h-[65px] rounded-[10px] border p-[10px] outline-none float-end"
                                     value={formData.alasan}
                                     onChange={handleChange}
                                 />
                             </td>
                         </tr>
                         <tr>
-                            <td className="w-[400px] font-bold text-[24px]">3. Diterima di Sekolah Ini</td>
+                            <td className="w-[350px] font-bold text-[24px]">3. Diterima di Sekolah Ini</td>
                         </tr>
                         <tr>
-                            <td className="w-[400px] font-bold text-[24px]">a. Kelas</td>
+                            <td className="w-[350px] font-bold text-[24px]">a. Kelas</td>
                             <td className="h-[85px]">
                                 <input
                                     type="text"
                                     name="kelas"
-                                    className="w-full h-[60px] rounded-[10px] border p-[10px] outline-none"
+                                    className="w-[507px] h-[65px] rounded-[10px] border p-[10px] outline-none float-end"
                                     value={formData.kelas}
                                     onChange={handleChange}
                                 />
                             </td>
                         </tr>
                         <tr>
-                            <td className="w-[400px] font-bold text-[24px]">b. Bidang Keahlian</td>
+                            <td className="w-[350px] font-bold text-[24px]">b. Bidang Keahlian</td>
                             <td className="h-[85px]">
                                 <input
                                     type="text"
                                     name="bidangKeahlian"
-                                    className="w-full h-[60px] rounded-[10px] border p-[10px] outline-none"
+                                    className="w-[507px] h-[65px] rounded-[10px] border p-[10px] outline-none float-end"
                                     value={formData.bidangKeahlian}
                                     onChange={handleChange}
                                 />
                             </td>
                         </tr>
                         <tr>
-                            <td className="w-[400px] font-bold text-[24px]">c. Program Keahlian</td>
+                            <td className="w-[350px] font-bold text-[24px]">c. Program Keahlian</td>
                             <td className="h-[85px]">
                                 <input
                                     type="text"
                                     name="programKeahlian"
-                                    className="w-full h-[60px] rounded-[10px] border p-[10px] outline-none"
+                                    className="w-[507px] h-[65px] rounded-[10px] border p-[10px] outline-none float-end"
                                     value={formData.programKeahlian}
                                     onChange={handleChange}
                                 />
                             </td>
                         </tr>
                         <tr>
-                            <td className="w-[400px] font-bold text-[24px]">d. Paket Keahlian</td>
+                            <td className="w-[350px] font-bold text-[24px]">d. Paket Keahlian</td>
                             <td className="h-[85px]">
                                 <input
                                     type="text"
                                     name="paketKeahlian"
-                                    className="w-full h-[60px] rounded-[10px] border p-[10px] outline-none"
+                                    className="w-[507px] h-[65px] rounded-[10px] border p-[10px] outline-none float-end"
                                     value={formData.paketKeahlian}
                                     onChange={handleChange}
                                 />
                             </td>
                         </tr>
                         <tr>
-                            <td className="w-[400px] font-bold text-[24px]">e. Tanggal</td>
+                            <td className="w-[350px] font-bold text-[24px]">e. Tanggal</td>
                             <td className="h-[85px]">
                                 <input
                                     type="date"
                                     name="tanggal"
-                                    className="w-full h-[60px] rounded-[10px] border p-[10px] outline-none"
+                                    className="w-[507px] h-[65px] rounded-[10px] border p-[10px] outline-none float-end"
                                     value={formData.tanggal}
                                     onChange={handleChange}
                                 />

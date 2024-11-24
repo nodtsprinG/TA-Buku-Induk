@@ -32,7 +32,7 @@ const Biodata = () => {
     };
 
     return (
-        <div className="w-[1026px] h-[1250px] mx-[50px] mt-10 bg-subcontent rounded-tr-[22px] rounded-tl-[22px] font-Quicksand">
+        <div className="w-[1031px] h-[1250px] mx-[50px] mt-10 bg-subcontent rounded-tr-[22px] rounded-tl-[22px] font-Quicksand">
             <div className="w-[890px] h-3/4 mx-auto my-auto p-10">
                 <form onSubmit={handleSubmit}>
                     <div className="mt-10">

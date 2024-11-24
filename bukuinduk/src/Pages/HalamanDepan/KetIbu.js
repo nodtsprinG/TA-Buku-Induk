@@ -1,4 +1,4 @@
-import Dashboard from '../../Components/PagesComponent/Dashboard'
+import Sidebar from '../../Components/PagesComponent/Sidebar'
 import Header from '../../Components/PagesComponent/Header'
 import NavButtons from '../../Components/Buttons/RoundedButton'
 import Form from '../../Components/Form/KeteranganIbu'
@@ -8,7 +8,7 @@ const KetIbu = () => {
     return (
         <div className='w-full h-full flex'>
             <div className='w-[284px] h-full'>
-                <Dashboard />
+                <Sidebar />
             </div>
             <div className='flex-1'>
                 <div>

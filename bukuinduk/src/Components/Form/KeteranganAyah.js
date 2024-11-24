@@ -32,7 +32,7 @@ const KeteranganAyah = () => {
     };
 
     return (
-        <div className='w-[1031px] h-[700px] mx-auto mt-10 bg-subcontent rounded-tr-[22px] rounded-tl-[22px]'>
+        <div className='w-[1031px] h-[700px] mx-[50px] mt-10 bg-subcontent rounded-tr-[22px] rounded-tl-[22px]'>
             <div className='w-[890px] h-[600px] mx-auto my-auto p-10 overflow-y-auto no-scrollbar'>
                 <form onSubmit={handleSubmit}>
                     {error && <div className="text-red-500 text-left mb-2" aria-live="assertive">{error}</div>}
@@ -40,7 +40,7 @@ const KeteranganAyah = () => {
                     <table className='mt-5 font-Quicksand'>
                         <thead>
                             <tr>
-                                <th className="w-[350px] font-bold size-[24px] text-left">Nama</th>
+                                <th className="w-[350px] font-bold text-[24px] text-left">Nama</th>
                                 <th className="h-[85px] text-left">
                                     <input
                                         type='text'
@@ -58,7 +58,7 @@ const KeteranganAyah = () => {
                     <table className='mt-5 font-Quicksand'>
                         <thead>
                             <tr>
-                                <th className="w-[350px] font-bold size-[24px] text-left">Tempat Tanggal Lahir</th>
+                                <th className="w-[350px] font-bold text-[24px] text-left">Tempat Tanggal Lahir</th>
                                 <th className="h-[85px] text-left">
                                     <input
                                         type='text'
@@ -76,7 +76,7 @@ const KeteranganAyah = () => {
                     <table className='mt-5 font-Quicksand'>
                         <thead>
                             <tr>
-                                <th className="w-[350px] font-bold size-[24px] text-left">Agama</th>
+                                <th className="w-[350px] font-bold text-[24px] text-left">Agama</th>
                                 <th className="h-[85px] text-left">
                                     <input
                                         type='text'
@@ -94,7 +94,7 @@ const KeteranganAyah = () => {
                     <table className='mt-5 font-Quicksand'>
                         <thead>
                             <tr>
-                                <th className="w-[350px] font-bold size-[24px] text-left">Kewarganegaraan</th>
+                                <th className="w-[350px] font-bold text-[24px] text-left">Kewarganegaraan</th>
                                 <th className="h-[85px] text-left">
                                     <input
                                         type='text'
@@ -112,7 +112,7 @@ const KeteranganAyah = () => {
                     <table className='mt-5 font-Quicksand'>
                         <thead>
                             <tr>
-                                <th className="w-[350px] font-bold size-[24px] text-left">Pendidikan</th>
+                                <th className="w-[350px] font-bold text-[24px] text-left">Pendidikan</th>
                                 <th className="h-[85px] text-left">
                                     <input
                                         type='text'
@@ -130,7 +130,7 @@ const KeteranganAyah = () => {
                     <table className='mt-5 font-Quicksand'>
                         <thead>
                             <tr>
-                                <th className="w-[350px] font-bold size-[24px] text-left">Pekerjaan</th>
+                                <th className="w-[350px] font-bold text-[24px] text-left">Pekerjaan</th>
                                 <th className="h-[85px] text-left">
                                     <input
                                         type='text'
@@ -148,7 +148,7 @@ const KeteranganAyah = () => {
                     <table className='mt-5 font-Quicksand'>
                         <thead>
                             <tr>
-                                <th className="w-[350px] font-bold size-[24px] text-left">Pengeluaran per Bulan</th>
+                                <th className="w-[350px] font-bold text-[24px] text-left">Pengeluaran per Bulan</th>
                                 <th className="h-[85px] text-left">
                                     <input
                                         type='text'
@@ -166,7 +166,7 @@ const KeteranganAyah = () => {
                     <table className='mt-5 font-Quicksand'>
                         <thead>
                             <tr>
-                                <th className="w-[350px] font-bold size-[24px] text-left">Alamat Rumah/Telepon</th>
+                                <th className="w-[350px] font-bold text-[24px] text-left">Alamat Rumah/Telepon</th>
                                 <th className="h-[85px] text-left">
                                     <input
                                         type='text'
@@ -184,7 +184,7 @@ const KeteranganAyah = () => {
                     <table className='mt-5 font-Quicksand'>
                         <thead>
                             <tr>
-                                <th className="w-[350px] font-bold size-[24px] text-left">Masih Hidup/Meninggal Dunia</th>
+                                <th className="w-[350px] font-bold text-[24px] text-left">Masih Hidup/Meninggal Dunia</th>
                                 <th className="h-[85px] text-left">
                                     <select
                                         name='statusHidup'

@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import Dashboard from '../Components/PagesComponent/Dashboard'
+import Sidebar from '../Components/PagesComponent/Sidebar'
 import Header from '../Components/PagesComponent/Header'
+import Search from '../Components/SearchBar/SearchInput'
 import TabelSemua from '../Components/Tables/TabelSiswa'
 import ImportButton from '../Components/Buttons/ButtonImport'
 import DeleteButton from '../Components/Buttons/ButtonDelete'
 import Filter from '../Components/Buttons/Filter'
-import { CiSearch } from "react-icons/ci";
 import NextButton from '../Components/Buttons/ButtonNext'
 import Pagination from '../Components/Buttons/Pagination'
 
@@ -21,7 +21,7 @@ const SemuaSiswa = () => {
     return (
         <div className='w-full h-full flex'>
             <div className='w-[284px] h-full'>
-                <Dashboard />
+                <Sidebar />
             </div>
             <div className='flex-1'>
                 <div>
@@ -32,16 +32,11 @@ const SemuaSiswa = () => {
                         {/* Wrapper untuk ikon filter dan search bar */}
                         <div className="flex items-center gap-4">
                             {/* Ikon Filter */}
-                            <div className='w-[40px] h-[32px]'><Filter /></div>
+                            <div className='relative w-[40px] h-[32px] rounded-md p-[6px_12px_6px-12px]'><Filter /></div>
 
                             {/* Search Bar */}
                             <div className='relative w-[320px] h-[32px] rounded-md p-[6px_12px_6px-12px]'>
-                                <CiSearch className="absolute top-1/2 left-4 transform -translate-y-1/2 text-gray-400 w-[20px] h-[30px]" />
-                                <input
-                                    placeholder="Cari"
-                                    className="w-full h-full pl-[48px] pr-[20px] rounded-[6px] p-[10px] border outline-none border-[#939393] placeholder:font-Quicksand font-bold size-4 leading-[20.7px]"
-                                    type="search"
-                                />
+                                <Search />
                             </div>
                             <div><DeleteButton /></div>
                             <div><ImportButton /></div>

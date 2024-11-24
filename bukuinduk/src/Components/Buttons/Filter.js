@@ -1,8 +1,8 @@
-import { FaFilter } from "react-icons/fa";
+import {ReactComponent as FilterSearch} from '../../Assets/filter.svg'
 const Filter = () => {
     return (
-        <div className='w-full h-full bg-white flex justify-center items-center rounded-md'>
-            <FaFilter />
+        <div className='w-full h-full gap-2 bg-white rounded-md p-[8px_12px_8px_12px]'>
+            <FilterSearch className='w-4 h-4' />
         </div>
     )
 }

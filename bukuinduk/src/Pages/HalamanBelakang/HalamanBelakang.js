@@ -1,4 +1,4 @@
-import Dashboard from '../../Components/PagesComponent/Dashboard'
+import Sidebar from '../../Components/PagesComponent/Sidebar'
 import Header from '../../Components/PagesComponent/Header'
 import Tabel from '../../Components/Tables/TabelBel'
 const HalamanBelakang = () => {
@@ -6,7 +6,7 @@ const HalamanBelakang = () => {
     return (
         <div className='w-full h-full flex'>
             <div className='w-[284px] h-full'>
-                <Dashboard />
+                <Sidebar />
             </div>
             <div className='flex-1'>
                 <div>
