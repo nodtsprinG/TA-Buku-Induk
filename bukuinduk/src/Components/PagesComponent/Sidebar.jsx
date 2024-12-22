@@ -54,14 +54,11 @@ const Sidebar = () => {
                                     <li className='w-fill h-[32px] rounded-lg p-[8px_12px_8px_12px] gap-[12px] text-slate-500 hover:bg-gray-100 hover:text-black'>
                                         <button onClick={() => navigate('/halamanbelakang')} className='w-full h-full flex justify-start items-start font-Quicksand font-bold text-xs tracking-[-0.02em]'>Halaman Belakang</button>
                                     </li>
-                                    <li className='w-fill h-[32px] rounded-lg p-[8px_12px_8px_12px] gap-[12px] text-slate-500 hover:bg-gray-100 hover:text-black'>
-                                        <button className='w-full h-full flex justify-start items-start font-Quicksand font-bold text-xs tracking-[-0.02em]'>Menu 4</button>
-                                    </li>
                                 </ul>
                             )}
                         </div>
 
-                        <div className={`relative w-[236px] h-[40px] rounded-[8px] p-[10px_12px_10px_12px] gap-[10px] flex items-center justify-between hover:bg-gray-100 transition-all duration-300 ${isOpen ? 'mt-[160px]' : 'mt-2'}`}>
+                        <div className={`relative w-[236px] h-[40px] rounded-[8px] p-[10px_12px_10px_12px] gap-[10px] flex items-center justify-between hover:bg-gray-100 transition-all duration-300 ${isOpen ? 'mt-[140px]' : 'mt-2'}`}>
                             <div className='flex items-center gap-[10px]'>
                                 <FaBookOpen className='w-[20px] h-[20px]' />
                                 <button onClick={()=> navigate('/jurusan')} className='w-[200px] h-full font-Quicksand font-bold text-[15px] text-left leading-5'>Jurusan</button>

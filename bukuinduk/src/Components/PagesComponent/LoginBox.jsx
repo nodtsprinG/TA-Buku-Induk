@@ -44,7 +44,7 @@ const LoginBox = () => {
               onChange={handleChange}
               className="w-full h-full border-collapse outline-none"
             >
-              <option value="" className="w-full">Angkatan</option>
+              <option value="" className="w-full">Tahun Ajaran</option>
               <option value="2023">2023-2024</option>
               <option value="2022">2022-2023</option>
               <option value="2021">2021-2022</option>
@@ -57,7 +57,7 @@ const LoginBox = () => {
           <button
             onClick={() => navigate('/admindashboard')}
             type="button"
-            className="w-[476px] h-[70px] bg-next text-2xl text-white font-Quicksand font-bold rounded-[10px] p-[10px]"
+            className="w-[476px] h-[70px] bg-next text-2xl text-white font-Quicksand font-bold leading- rounded-[10px] p-[10px]"
           >
             MASUK
           </button>
