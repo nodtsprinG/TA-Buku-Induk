@@ -58,7 +58,7 @@ const Biodata = () => {
 
                         <div className="mb-5 flex items-center">
                             <label className="w-[350px] font-bold text-[24px]">Tempat dan Tanggal Lahir</label>
-                            <input type="date" className="w-full px-4 py-2 border rounded-[10px] focus:outline-none h-[65px] ml-5" name="lahir" value={formData.lahir} onChange={handleChange} />
+                            <input type="text" className="w-full px-4 py-2 border rounded-[10px] focus:outline-none h-[65px] ml-5" name="lahir" value={formData.lahir} onChange={handleChange} />
                         </div>
 
                         <div className="mb-5 flex items-center">

@@ -6,11 +6,14 @@ import { FaBookOpen } from "react-icons/fa6";
 import { ReactComponent as Logout } from '../../Assets/Logout.svg';
 import { LiaAngleDownSolid } from "react-icons/lia";
 import { useNavigate } from "react-router-dom";
+import axios from 'axios'
 
 
 const Sidebar = () => {
 
     const navigate = useNavigate()
+
+    
 
     const [isOpen, setIsOpen] = useState(false)
     const [isOpen1, setIsOpen1] = useState(false)
@@ -82,7 +85,7 @@ const Sidebar = () => {
                         <div className='w-full h-[468px] p-[24px] gap-2'>
                             <div className='w-[236px] h-[40px] rounded-[8px] p-[10px_12px] gap-[10px] flex hover:bg-gray-100 transition-all duration-300'>
                                 <Logout className='w-[20px] h-[20px]' />
-                                <button onClick={() => navigate('/')} className='font-Quicksand font-bold text-[15px] text-left leading-5'>
+                                <button onClick={()=> navigate('/loginadmin')} className='font-Quicksand font-bold text-[15px] text-left leading-5'>
                                     Keluar
                                 </button>
                             </div>

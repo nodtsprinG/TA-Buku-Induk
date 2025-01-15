@@ -1,31 +1,14 @@
+import React, {useState} from 'react'
 import { RiFileExcel2Fill } from "react-icons/ri";
 import { MdPictureAsPdf } from "react-icons/md";
 import Edit from '../Buttons/Edit'
 import Hapus from '../Buttons/Hapus'
 const TabelSiswa = () => {
     const dataDummy = [
-        {
-            id: 1,
-            nama: "Cristiano Antony",
-            jurusan: "Rekayasa Perangkat Lunak",
-            angkatan: "2022",
-            kelas: "XI",
-        },
-        {
-            id: 2,
-            nama: "Lionel Messi",
-            jurusan: "Teknik Komputer & Jaringan",
-            angkatan: "2021",
-            kelas: "XII",
-        },
-        {
-            id: 3,
-            nama: "Neymar Jr",
-            jurusan: "Mekatronika",
-            angkatan: "2023",
-            kelas: "X",
-        },
+        
     ]
+
+    const [siswa, setSiswa] = useState(dataDummy)
 
     return (
         <div>

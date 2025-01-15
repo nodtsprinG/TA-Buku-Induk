@@ -26,6 +26,8 @@ const SemuaSiswa = () => {
         setIsImportOpen((prev) => !prev);
     };
 
+    const [searchVal, setSearchVal] = useState("")
+
     const textHeader = 'Data Siswa ADMIN';
     const textSubHeader = 'Data Semua Siswa';
     const placeholder = 'Cari Siswa...'

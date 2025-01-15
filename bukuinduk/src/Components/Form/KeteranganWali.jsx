@@ -44,7 +44,7 @@ const KeteranganWali = () => {
                         <td className="w-[350px] font-bold text-[24px]">Tempat dan Tanggal Lahir</td>
                         <td className="h-[85px]">
                             <input
-                                type='date'
+                                type='text'
                                 name='TTL'
                                 className="w-[507px] h-[65px] rounded-[10px] border p-[10px] outline-none float-end"
                                 value={formData.TTL}
