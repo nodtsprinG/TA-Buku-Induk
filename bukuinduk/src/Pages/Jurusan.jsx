@@ -1,62 +1,143 @@
-import React, { useState } from 'react'
-import Sidebar from '../Components/PagesComponent/Sidebar'
-import Header from '../Components/PagesComponent/Header'
-import Filter from '../Components/Buttons/Filter'
-import Search from '../Components/SearchBar/SearchInput'
-import ImportButton from '../Components/Buttons/ButtonImport';
-import { FaFilter } from "react-icons/fa";
-import { FaPlus } from "react-icons/fa";
-const Jurusan = () => {
+import React, { useState } from 'react';
+import Sidebar from '../Components/PagesComponent/Sidebar';
+import Header from '../Components/PagesComponent/Header';
+import Search from '../Components/SearchBar/SearchInput';
+import { FaFilter, FaPlus, FaTrash, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
+const Jurusan = () => {
     const [isFilterOpen, setIsFilterOpen] = useState(false);
     const [isImportOpen, setIsImportOpen] = useState(false);
+    const [openDropdown, setOpenDropdown] = useState({}); // Menyimpan status dropdown per jurusan
+    const [kelasList, setKelasList] = useState({});
 
-    const toggleFilter = () => {
-        setIsFilterOpen(!isFilterOpen);
-    };
-    const toggleImport = () => {
-        setIsImportOpen((prev) => !prev);
+    const toggleDropdown = (index) => {
+        setOpenDropdown(prevState => ({
+            ...prevState,
+            [index]: !prevState[index], // Toggle dropdown untuk jurusan tertentu
+        }));
     };
 
-    const textHeader = "Jurusan"
-    const textSubHeader = "Jurusan SMKN 2 Singosari"
-    const placeholder = "Tahun Ajaran Default 2024"
+    const handleTambahKelas = (jurusanIndex) => {
+        const kelasNama = prompt('Masukkan nama kelas:');
+        if (kelasNama) {
+            setKelasList((prevState) => {
+                const updatedKelas = { ...prevState };
+                if (!updatedKelas[jurusanIndex]) {
+                    updatedKelas[jurusanIndex] = [];
+                }
+                updatedKelas[jurusanIndex].push(kelasNama);
+                return updatedKelas;
+            });
+        }
+    };
+
+    const jurusanList = [
+        "Rekayasa Perangkat Lunak",
+        "Desain Komunikasi Visual",
+        "Animasi",
+        "Broadcasting",
+        "Teknik Komputer Jaringan",
+        "Elektronika Industri",
+        "Audio Video",
+        "Mekatronika",
+    ];
+
+    const textHeader = "MENU NAMA";
+    const textSubHeader = "jurusan SMKN 2 SINGOSARI ";
+    const placeholder = "Tahun Ajaran Default 2024";
+
     return (
-        <div className='w-full h-full flex'>
-            <div className='w-[284px] h-full'>
+        <div className="w-full h-full flex">
+            {/* Sidebar */}
+            <div className="w-[284px] h-full">
                 <Sidebar />
             </div>
-            <div className='flex-1'>
+
+            {/* Main Content */}
+            <div className="flex-1">
                 <Header textHeader={textHeader} textSubHeader={textSubHeader} />
-                <div className="w-[1132px] h-[772px] mt-4 ml-4 p-[10px] gap-[10px]">
-                    <div className="flex items-center gap-4">
+
+                <div className="w-[1132px] mt-4 ml-4 p-4">
+                    {/* Search and Add Button */}
+                    <div className="flex items-center gap-4 mb-6">
                         <div className="relative">
-                            <div onClick={toggleFilter} className="w-[40px] h-[32px] border border-gray-600 bg-white text-slate-600 rounded-md flex items-center justify-center">
+                            <div
+                                onClick={() => setIsFilterOpen(!isFilterOpen)}
+                                className="w-[40px] h-[32px] border border-gray-600 bg-white text-slate-600 rounded-md flex items-center justify-center cursor-pointer"
+                            >
                                 <FaFilter />
                             </div>
-                            {/* Filter Panel */}
-                            <Filter isOpen={isFilterOpen} toggleFilter={toggleFilter} />
                         </div>
 
-                        {/* Search Bar */}
-                        <div className="relative w-[370px] h-[45px] rounded-md mt-3">
+                        <div className="relative w-[370px] h-[45px] rounded-md">
                             <Search placeholder={placeholder} />
                         </div>
 
-                        {/* Tombol Delete dan Import */}
-                        <div className="mt-3 ml-[400px]">
-                            <div onClick={toggleImport} className='w-[300px] h-[45px] bg-[#2264E5] rounded-md p-[6px_12px_6px_12px] gap-2 flex justify-center items-center text-white'>
-                                <FaPlus className='w-5 h-5' />
-                                <button className='font-Quicksand text-[24px] font-bold leading-[104%] text-left'>Tambah Jurusan</button>
+                        <button
+                            onClick={() => setIsImportOpen(!isImportOpen)}
+                            className="ml-auto w-[200px] h-[45px] bg-[#2264E5] rounded-md text-white flex items-center justify-center gap-2 font-bold text-lg"
+                        >
+                            <FaPlus className="w-5 h-5" />
+                            Tambah Jurusan
+                        </button>
+                    </div>
+
+                    {/* Jurusan List */}
+                    <div className="grid grid-cols-2 gap-4">
+                        {jurusanList.map((jurusan, index) => (
+                            <div
+                                key={index}
+                                className="bg-white shadow-md rounded-lg border border-gray-300"
+                            >
+                                {/* Header Card */}
+                                <div className="flex justify-between items-center p-4 border-b border-gray-300">
+                                    <span className="font-semibold text-lg">{jurusan}</span>
+                                    <div className="flex items-center gap-2">
+                                        <button className="text-gray-600 hover:text-red-600">
+                                            <FaTrash />
+                                        </button>
+                                        <button
+                                            onClick={() => toggleDropdown(index)}
+                                            className="text-gray-600 hover:text-gray-800"
+                                        >
+                                            {openDropdown[index] ? (
+                                                <FaChevronUp />
+                                            ) : (
+                                                <FaChevronDown />
+                                            )}
+                                        </button>
+                                    </div>
+                                </div>
+
+                                {/* Dropdown Content */}
+                                {openDropdown[index] && (
+                                    <div className="p-4">
+                                        <button
+                                            onClick={() => handleTambahKelas(index)}
+                                            className="w-full flex items-center justify-center gap-2 text-blue-500 hover:text-white hover:bg-blue-500 border border-blue-1000 rounded-md px-4 py-2 font-medium transition duration-200"
+                                        >
+                                            <FaPlus className="text-lg" />
+                                            <span>Tambah Kelas</span>
+                                        </button>
+                                        <div className="mt-2">
+                                            {(kelasList[index] || []).map((kelas, kelasIndex) => (
+                                                <div
+                                                    key={kelasIndex}
+                                                    className="p-2 bg-gray-100 rounded-md mb-2 text-sm font-medium text-gray-700"
+                                                >
+                                                    {kelas}
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                )}
                             </div>
-                            {isImportOpen && (
-                                <ImportButton isImportOpen={isImportOpen} setIsImportOpen={setIsImportOpen} />
-                            )}
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>
         </div>
-    )
-}
-export default Jurusan
+    );
+};
+
+export default Jurusan;

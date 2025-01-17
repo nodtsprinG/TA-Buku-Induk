@@ -27,7 +27,7 @@ const Alamat = () => {
     };
 
     return (
-        <div className="w-[1031px] h-[800px] mx-[50px] mt-12 p-20 bg-subcontent rounded-tl-[22px] rounded-tr-[22px] font-bold size-[24px]">
+        <div className="w-[1031px] h-[800px] mx-[50px] mt-12 p-20 bg-subcontent rounded-tl-[22px] rounded-tr-[22px]">
             <form onSubmit={handleSubmit} className="space-y-12">
                 {[
                     { label: "Alamat", name: "alamat" },
@@ -38,12 +38,12 @@ const Alamat = () => {
                     <div key={idx} className="flex items-center space-x-10">
                         <label htmlFor={name} className="w-[345px] font-bold text-[24px] font-Quicksand text-left">{label}</label>
                         {type === "select" ? (
-                            <select
+                            <select //dropdown
                                 id={name}
                                 name={name}
                                 value={formData[name]}
                                 onChange={handleChange}
-                                className="w-[507px] h-[65px] rounded-[10px] border p-[10px] text-lg outline-none"
+                                className="w-[507px] h-[65px] rounded-[10px] border p-[10px] outline-none float-end"
                             >
                                 <option value="">Pilih</option>
                                 {options.map((option) => (
@@ -57,7 +57,7 @@ const Alamat = () => {
                                 name={name}
                                 value={formData[name]}
                                 onChange={handleChange}
-                                className="w-[507px] h-[65px] rounded-[10px] border p-[10px] outline-none text-lg"
+                                className="w-[507px] h-[65px] rounded-[10px] border p-[10px] outline-none float-end"
                             />
                         )}
                     </div>
@@ -66,11 +66,11 @@ const Alamat = () => {
                 {error && <div className="text-red-500 text-left mb-2">{error}</div>}
 
                 <div className="mt-10 float-left">
-                    <Kembali back="/halamandepan/" />
+                    <Kembali back="/halamandepan/biodata" />
                 </div>
                 <div className="mt-10 ml-10 float-right">
                     <button type="submit">
-                        <Lanjut to="/halamandepan/kesehatanadmin" />
+                        <Lanjut to="/halamandepan/kesehatan" />
                     </button>
                 </div>
             </form>

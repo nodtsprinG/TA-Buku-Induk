@@ -5,10 +5,44 @@ import Edit from '../Buttons/Edit'
 import Hapus from '../Buttons/Hapus'
 const TabelSiswa = () => {
     const dataDummy = [
-        
-    ]
+        {
+            nomor: 1,
+            nama:'Ahmad Syaputra',
+            jurusan:'Rekayasa Perangkat Lunak',
+            angkatan:'2022',
+            kelas:'XII'
+        },
+        {
+            nomor: 2,
+            nama:'Muhammad Diky',
+            jurusan:'Desain Komunikasi Visual',
+            angkatan:'2023',
+            kelas:'XI'
+        },
+        {
+            nomor: 3,
+            nama:'Riski Maulana',
+            jurusan:'Mekatronika',
+            angkatan:'2022',
+            kelas:'XII'
+        },
+        {
+            nomor: 4,
+            nama:'Arkhan Prasetya',
+            jurusan:'Audio VIdeo',
+            angkatan:'2024',
+            kelas:'X'
+        },
+        {
+            nomor: 5,
+            nama:'Azizah Putri',
+            jurusan:'Teknik Komunikasi dan Jaringan',
+            angkatan:'2023',
+            kelas:'XI'
+        }
+    ];
 
-    const [siswa, setSiswa] = useState(dataDummy)
+    const [siswa, setSiswa] = useState(dataDummy);
 
     return (
         <div>
